@@ -1,0 +1,21 @@
+doctype 
+html
+  head
+    title My Test Page
+    link(rel='stylesheet', href='/css/sitewide.css')
+  body
+    .header
+      .header.title
+        block header_title
+    
+      .header.navbar
+              a(href="/home") Home
+              a(href="/about") About
+              a(href="/blog") Blog
+              a(href="/contact") Contact
+
+    .main_content
+      block content
+
+    .footer
+      p This is my footer
