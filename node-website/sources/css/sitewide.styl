@@ -3,32 +3,53 @@
   background #000  
   
   .title
-    font-size 36pt
-    font-family 'Georgia', serif
-    text-align center
-    text-transform lowercase
-    padding 100px
+    padding-left 100px
+    padding-top 200px
+    padding-bottom @padding-top
+    background-image url('https://lh3.googleusercontent.com/tJ91mRBujgr3vCYkei3DVgfNIAb8mzskQprMyu6EczHO3TJCK7jZZKV7cZu9T3c9YZA2fpVAnzUZY9v7Aq6DmhuzMs57_yqBa26dbc8NBHX5lhuVBb0ltCL70KAWFnw9en5J5OWioBFGrgK6TUN317txjj9S3c-M7KiQAVHs_HtfkA2Dtafc-NvOMl_S1Ct9osG4jOHGHdAXnO8_5tUAq5im9S_Cj_dY8jlIFEPnLhsHt368mTxh2HacNOQk2bR-YOsy_ApnQSB1jrQT00Qjb5RMFsO7XBBA3hWajMP6FYwzFbYZjHiGURThgfTWqOfsU_uedfRbwYRSSvWa98xDK9AxYgWR-MEqW2PQZoqjI_Fx50m7u-dBwfOKD78ocaRjGorbnQqevqbEXmx9bCBDx_V2tx41G5v1qAGGeODMpczJGqo8R241MoenTbE2ZyalBn4XsANizZoYXKfKIaa_hP7DJ_3tHIs3XFOTN8XhzaA8tlHDgZ8_-aSYhtGFmVkt-YLVks-vPUBNWlHkNhvWQ85wYbKv1G1MGtP6f_GkIC-A5stz7Ob3BVdIqe0dnzOVHXyjCAt9w0_REtcZwvr2MM21AXuP9dVVu92ujpcrD7Fn_1YQNBDs=w1620-h911-no')
+    background-position center
+    .titletext
+      span
+        font-size 48pt
+        font-family 'Courier New', serif
+        text-align left
+        text-transform lowercase
+        background-color #0008
+    
 
   .navbar
     text-align center
     margin auto
     background #000
-    color #fff
-    font-family 'Consolas', 'Courier New', monospace
-    font-size 10pt
     display flex
     justify-content space-between
     max-width 50%
     padding 10px
+    a
+      font-family 'Consolas', 'Courier New', monospace
+      font-size 10pt
+      text-decoration: none
+      color: #fff
+      &:hover
+        color: #f00
+        text-decoration: underline
+      
+body
+  background #333
 
-.main_content
-  font-family 'Veranda', 'Calibri', sans-serif
-  font-size 12pt
-  margin 20px
-  max-width 800px
-  p
-    padding 10px
+  .main_content
+    font-family monospace
+    font-size 12pt
+    margin auto
+    max-width 60%
+    background #444
+    p
+      padding 10px
+      color #fff
 
-.footer
-  font-size 8pt
-  color #f00
+    .footer
+      font-size 8pt
+      padding-top 20pt
+      padding-left 10px
+      padding-bottom 10px
+      color #fff

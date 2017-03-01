@@ -9,7 +9,7 @@
     "watch-css": "stylus sources/css/sitewide.styl -o static/css -w",
     "clean": "rm -rf static/css && mkdir -p static/css",
     "build": "npm run clean && npm run build-css",
-    "watch": "npm run clean && npm run watch-css & nodemon server -e js,jade",
+    "watch": "npm run clean && npm run watch-css & nodemon server -e js,jade,styl",
     "start": "node server"
   },
   "author": "chris",
@@ -17,7 +17,8 @@
   "dependencies": {
     "express": "^4.14.1",
     "jade": "^1.11.0",
-    "nodemon": "^1.9.2",
-    "stylus": "^0.54.5"
+    "nodemon": "~1.9.2",
+    "stylus": "^0.54.5",
+    "node-mysql": "~0.4.2"
   }
 }
