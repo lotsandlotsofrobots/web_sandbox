@@ -1,17 +1,4 @@
-extend template
-
-script(src="/scripts/mysql.js")
-
-block page_title
-  title.
-    the whole internet - blog.
-
-block header_title
-  .titletext
-    p.
-    span.
-      blog.
-
-block content
-  .main_content
-    - document.write("hello world")
+p hello world
+ul
+for result in results
+  li #{result.test}
