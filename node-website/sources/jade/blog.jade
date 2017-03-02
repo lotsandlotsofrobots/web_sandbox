@@ -1,4 +1,13 @@
-p hello world
-ul
-for result in results
-  li #{result.test}
+extend template 
+
+block header_title
+  .titletext
+    p.
+    span.
+      blog.
+
+block content
+  each item, key in results
+    .blog_title 
+      p= item.title
+    p= item.body

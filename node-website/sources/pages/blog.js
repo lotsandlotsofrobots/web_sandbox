@@ -7,6 +7,7 @@ function render_default(rootdir, response) {
   //var html = require('jade').compileFile(rootdir + '/sources/jade/blog.jade')({ title : '' })
   
   var jsonData = [];
+  /*
   var connection = new mysql.createConnection({
     host : 'localhost',
     user : 'nodejs_mysql',
@@ -31,9 +32,15 @@ function render_default(rootdir, response) {
     })
   });
   connection.end();
+  */
+
+  var r = {'0':{'title':'foobar','body':'hello world'}, '1':{'title':'blah','body':'goodbye world'}};
+  var compiledFunction = require('jade').compileFile(path);
+  var html = compiledFunction({results : r});
+  response.send(html);
 
   //response.render(rootdir + '/sources/jade/blog.jade', {'results' : JSON.stringify(jsonData)});
-  response.render(rootdir + '/sources/jade/blog.jade', {'results': [{'test':'foobar', 'test':'boo'}]});
+  //response.render(rootdir + '/sources/jade/blog.jade', {'results': [{'test':'foobar', 'test':'boo'}]});
 
   //return html
 }
